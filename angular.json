@@ -35,9 +35,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap-datepicker.min.css",
+              "src/assets/css/core.css",
+              "src/assets/css/iconfont.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/vendors/core/core.js",
+              "src/assets/js/template.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -106,5 +113,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "fe0778af-71de-457c-be1b-e7f33ee2acd1"
   }
 }

@@ -1,0 +1,86 @@
+<!-- sidebar starts -->
+<nav class="sidebar">
+    <div class="sidebar-header">
+        <a routerLink="/home" class="sidebar-brand">
+            <img src="" alt="logo" class="w-75">
+        </a>
+        <div class="sidebar-toggler not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="sidebar-body">
+        <ul class="nav">
+            <li class="nav-item">
+                <a routerLink="/home" class="nav-link">
+                    <i class="link-icon" data-feather="box"></i>
+                    <span class="link-title">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" data-bs-toggle="collapse" href="#events" role="button" aria-expanded="false"
+                    aria-controls="events">
+                    <i class="link-icon" data-feather="user"></i>
+                    <span class="link-title">Product</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse" id="events">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a routerLink="/product-list" class="nav-link">Product List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/add-product" class="nav-link">Add Product</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#events2" role="button" aria-expanded="false"
+                    aria-controls="events2">
+                    <i class="link-icon" data-feather="user"></i>
+                    <span class="link-title">Destination Management</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse" id="events2">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a routerLink="/destination-list" class="nav-link">All Destination Lists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/add-destination" class="nav-link">Add Destination</a>
+                        </li>
+                    </ul>
+                </div>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a routerLink="/booking" class="nav-link">
+                    <i class="link-icon" data-feather="box"></i>
+                    <span class="link-title">Booking Section</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/comments" class="nav-link">
+                    <i class="link-icon" data-feather="box"></i>
+                    <span class="link-title">Comments Section</span>
+                </a>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#setting" role="button" aria-expanded="false"
+                    aria-controls="setting">
+                    <i class="link-icon" data-feather="settings"></i>
+                    <span class="link-title">Settings</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse" id="setting">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a routerLink="/company" class="nav-link">Company Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,161 @@
+.container {
+    position: relative;
+    /* Optionally set a height for the container */
+}
+
+.container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* max-width: 100%;
+    max-height: 100%; */
+}
+
+.notification {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.notification button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.notification button.yes {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.notification button.no {
+    background-color: #f44336;
+    color: white;
+}
+
+.small-button {
+    width: 60%;
+    /* Adjust width */
+    max-width: 200px;
+    /* Maximum width */
+    height: 40px;
+    /* Adjust height */
+    padding: 5px 10px;
+    /* Adjust padding */
+    font-size: 1em;
+    /* Adjust font size */
+}
+
+@media (max-width: 600px) {
+    .small-button {
+        width: 80%;
+        /* Adjust width for smaller screens */
+    }
+}
+
+.col-lg-3.col-md-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-lg-3.col-md-4 input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+    /* Masofani sozlash uchun */
+}
+
+.col-lg-3.col-md-4 button {
+    margin-left: 10px;
+    /* Masofani sozlash uchun */
+}
+
+.container {
+    position: relative;
+    /* Optionally set a height for the container */
+}
+
+/* 
+.container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.notification {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.notification button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.notification button.yes {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.notification button.no {
+    background-color: #f44336;
+    color: white;
+}
+
+.small-button {
+    width: 80%;
+    /* Adjust width */
+    max-width: 200px;
+    /* Maximum width */
+    height: 40px;
+    /* Adjust height */
+    padding: 5px 10px;
+    /* Adjust padding */
+    font-size: 1em;
+    /* Adjust font size */
+}
+
+@media (max-width: 600px) {
+    .small-button {
+        width: 80%;
+        /* Adjust width for smaller screens */
+    }
+}
+
+
+.col-lg-3.col-md-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-lg-3.col-md-4 input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+    /* Masofani sozlash uchun */
+}
+
+.col-lg-3.col-md-4 button {
+    margin-left: 10px;
+    /* Masofani sozlash uchun */
+}

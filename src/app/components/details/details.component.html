@@ -1,0 +1,77 @@
+<div>
+    <div class="main-wrapper">
+        <div class="page-wrapper">
+            <app-menu-bar></app-menu-bar>
+            <nav class="navbar">
+                <a routerLink="" class="sidebar-toggler">
+                    <i data-feather="menu"></i>
+                </a>
+                <div class="navbar-content">
+                    <form class="search-form w-25">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i data-feather="search"></i>
+                            </div>
+                            <input type="text" class="form-control" id="navbarForm" placeholder="Search here...">
+                        </div>
+                    </form>
+                </div>
+            </nav>
+            <div class="page-content">
+                <nav class="page-breadcrumb d-flex align-items-center justify-content-between">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a routerLink="/home">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Product Edit</li>
+                    </ol>
+                </nav>
+
+                <div class="row">
+                    <div class="col-md-12 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="mb-4">Product Edit</h4>
+                                <form class="forms-sample">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-3">
+                                            <label for="upload" class="form-label">Upload Video</label>
+                                            <input class="form-control" (change)="method($event)" type="file"
+                                                id="upload">
+                                        </div>
+                                        <div class="col-lg-6 mb-3">
+                                            <label for="comapanyname" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="name" autocomplete="off"
+                                                placeholder="">
+                                        </div>
+                                        <div class="col-lg-6 mb-3">
+                                            <label for="address2" class="form-label">Description</label>
+                                            <input type="text" class="form-control" id="description" autocomplete="off"
+                                                placeholder="">
+                                        </div>
+                                        <div class="col-lg-6 mb-3">
+                                            <label for="email" class="form-label">Sort Number</label>
+                                            <input type="email" class="form-control" id="sort-number" autocomplete="off"
+                                                placeholder="">
+                                        </div>
+                                        <div class="text-center">
+                                            <!-- <button class="btn btn-primary"><i (click)="createCompany()"
+                                                    class="link-icon" data-feather="plus"></i> Save Profile</button> -->
+                                        </div>
+                                    </div>
+                                </form>
+                                <button class="btn btn-primary" (click)="UpdateProduct()">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <footer
+                class="footer d-flex flex-column flex-md-row align-items-center justify-content-between px-4 py-3 border-top small">
+                <p class="text-muted mb-1 mb-md-0">Copyright © 2024 <a routerLink="/home" target="_blank"></a>.
+                </p>
+                <p class="text-muted">Powered By <i class="mb-1 text-primary ms-1 icon-sm" data-feather="heart"></i>
+                    Bizberg Themes</p>
+            </footer>
+        </div>
+    </div>
+</div>
